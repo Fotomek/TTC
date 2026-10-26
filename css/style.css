@@ -144,9 +144,9 @@ body.hero-page{padding-top:0}
   linear-gradient(0deg,rgba(14,28,29,.9) 0%,rgba(14,28,29,0) 45%)}
 .hero .wrap{padding-block:calc(var(--head) + 3rem) clamp(4rem,9vw,7rem)}
 .hero-text{max-width:50rem}
-.hero .lead{margin-top:2.25rem;color:var(--mist);max-width:30em}
+.hero .lead{margin-top:1.75rem;color:var(--mist);max-width:30em}
 .hero h1{color:var(--bg)}
-.hero-tag{margin:3.5rem 0 0;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mist)}
+.hero-tag{margin:1.5rem 0 0;font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.35rem);line-height:1.15;letter-spacing:.01em;color:#fff;text-shadow:0 1px 18px rgba(8,20,22,.55);display:inline-block;padding-bottom:.55rem;border-bottom:2px solid var(--accent-light)}
 .hero-scroll{position:absolute;right:var(--gutter);bottom:2.5rem;width:1px;height:4.5rem;background:linear-gradient(var(--accent-light),transparent);opacity:.7}
 @media (max-width:900px){.hero-scroll{display:none}.hero::before{background:linear-gradient(0deg,rgba(14,28,29,.92) 0%,rgba(14,28,29,.6) 60%,rgba(14,28,29,.45) 100%)}}
 
