@@ -317,7 +317,7 @@ address{font-style:normal}
 mark.placeholder{background:rgba(62,107,102,.12);color:var(--ink);padding:.05em .35em;border:1px dashed var(--accent);font-style:normal}
 
 /* Sprachumschalter DE | EN */
-.lang-switch{display:flex;align-items:center;gap:.45rem;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-left:-.6rem;white-space:nowrap}
+.lang-switch{display:flex;align-items:center;gap:.45rem;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-left:-1rem;white-space:nowrap}
 .lang-switch a{color:var(--slate);text-decoration:none;padding:.6rem .1rem;transition:color .5s var(--ease)}
 .lang-switch a:hover,.lang-switch a:focus-visible{color:var(--ink)}
 .lang-switch [aria-current]{color:var(--ink);font-weight:600}
@@ -336,8 +336,8 @@ mark.placeholder{background:rgba(62,107,102,.12);color:var(--ink);padding:.05em 
   .lang-switch{margin-left:-.4rem;font-size:.68rem;letter-spacing:.1em}
 }
 @media (max-width:900px){
-  .nav>ul>li.lang-switch{margin:0;padding:1rem 0;font-size:.8rem;letter-spacing:.14em;gap:.7rem}
-  .lang-switch a{padding:.35rem .15rem}
-  .lang-switch,.lang-switch a,.lang-switch [aria-current]{color:var(--slate)}
-  .lang-switch [aria-current]{color:var(--ink)}
+  .site-header .brand{order:0}
+  .site-header .lang-switch{order:1;margin:0 .9rem 0 auto;font-size:.78rem;letter-spacing:.14em;gap:.55rem}
+  .site-header .nav-toggle{order:2}
+  .lang-switch a{padding:.6rem .25rem}
 }
