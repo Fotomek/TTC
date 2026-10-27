@@ -6,6 +6,9 @@
   var toggle = doc.querySelector('.nav-toggle');
   var nav = doc.getElementById('site-nav');
   var heroPage = doc.body.classList.contains('hero-page');
+  var isEn = (doc.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+  var lblOpen = isEn ? 'Open menu' : 'Menü öffnen';
+  var lblClose = isEn ? 'Close menu' : 'Menü schließen';
 
   // Kopfzeile: über dem Bild transparent, danach ruhig geblurt/fest
   function headState() {
@@ -20,7 +23,7 @@
   // Mobile Navigation
   function setMenu(open) {
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    toggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    toggle.setAttribute('aria-label', open ? lblClose : lblOpen);
     nav.classList.toggle('is-open', open);
     header.classList.toggle('menu-open', open);
     headState();
